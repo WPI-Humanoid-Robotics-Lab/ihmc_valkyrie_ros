@@ -16,4 +16,5 @@
 
   <node name="IHMCValkyrieROSAPISimulator" pkg="ihmc_ros_java_adapter" type="gradlew" args="runJava -Dus.ihmc.networkParameterFile=$(arg ihmc_network_file) -PuseLocal=$(arg use_local_build) -Pyaml=$(find ihmc_valkyrie_ros)/configurations/scs.yaml -PprogramArgs=-s,$(arg starting_location),--tfPrefix,$(arg tf_prefix),$(arg scs_args)" required="true" output="screen" cwd="node">
   </node>
+
 </launch>
